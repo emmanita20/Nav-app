@@ -1,0 +1,72 @@
+.emergency-container {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.emergency-active {
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  background: #fef2f2;
+  padding: 0.9rem;
+}
+
+.emergency-active-text,
+.emergency-active-status {
+  margin: 0;
+  color: var(--danger-dark);
+}
+
+.emergency-active-text {
+  font-weight: 900;
+}
+
+.emergency-active-status {
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+}
+
+.emergency-btn {
+  width: 100%;
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  border-radius: 8px;
+  background: var(--danger);
+  color: white;
+  font-size: 1.02rem;
+  box-shadow: 0 14px 24px rgba(220, 38, 38, 0.24);
+  transition:
+    transform 160ms ease,
+    background-color 160ms ease;
+}
+
+.emergency-btn:hover {
+  background: var(--danger-dark);
+}
+
+.emergency-btn.emergency-pressed {
+  transform: scale(0.98);
+}
+
+.emergency-btn.emergency-confirm {
+  background: var(--warning);
+  box-shadow: 0 14px 24px rgba(180, 83, 9, 0.2);
+}
+
+.emergency-confirm-text,
+.emergency-error {
+  margin: 0;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.emergency-confirm-text {
+  color: var(--warning);
+}
+
+.emergency-error {
+  color: var(--danger-dark);
+}

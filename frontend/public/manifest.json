@@ -1,0 +1,51 @@
+{
+  "name": "Navi App - Smart Indoor Navigation",
+  "short_name": "Navi",
+  "description": "Real-time indoor & outdoor navigation with emergency response",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#0066cc",
+  "icons": [],
+  "categories": ["navigation", "utilities"],
+  "screenshots": [
+    {
+      "src": "/screenshot-540x720.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/screenshot-1280x720.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Emergency SOS",
+      "short_name": "SOS",
+      "description": "Quickly trigger emergency alert",
+      "url": "/home?mode=emergency"
+    },
+    {
+      "name": "Find Location",
+      "short_name": "Navigate",
+      "description": "Start navigation to a location",
+      "url": "/home?mode=navigate"
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
+}

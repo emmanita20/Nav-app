@@ -1,0 +1,95 @@
+.admin-container {
+  min-height: 100vh;
+  padding: 1.5rem;
+  background: var(--surface-soft);
+}
+
+.admin-title {
+  width: min(100%, 1180px);
+  margin: 0 auto 1.25rem;
+  color: var(--ink);
+  font-size: 1.8rem;
+}
+
+.admin-kpi-grid,
+.admin-chart-grid,
+.admin-container > .panel-notice {
+  width: min(100%, 1180px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.admin-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.kpi-card,
+.admin-chart-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.08);
+  padding: 1rem;
+}
+
+.kpi-label {
+  margin: 0 0 0.45rem;
+  color: var(--ink-muted);
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.kpi-value {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.kpi-blue {
+  color: var(--secondary);
+}
+
+.kpi-green,
+.kpi-purple {
+  color: var(--primary);
+}
+
+.kpi-red {
+  color: var(--danger);
+}
+
+.admin-chart-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.admin-chart-full {
+  grid-column: 1 / -1;
+}
+
+.admin-chart-title {
+  margin: 0 0 1rem;
+  color: var(--ink);
+  font-size: 1.1rem;
+}
+
+@media (max-width: 1024px) {
+  .admin-kpi-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .admin-container {
+    padding: 1rem;
+  }
+
+  .admin-kpi-grid,
+  .admin-chart-grid {
+    grid-template-columns: 1fr;
+  }
+}

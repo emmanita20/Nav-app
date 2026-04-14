@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /manifest.json
+
+Disallow: /api/
+Disallow: /admin/

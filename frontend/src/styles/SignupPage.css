@@ -1,0 +1,4 @@
+/* SignupPage reuses LoginPage styles; keep minimal overrides if needed */
+@import url("./LoginPage.css");
+
+/* If you need custom signup-only styles, add them here */
